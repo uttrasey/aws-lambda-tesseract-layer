@@ -1,0 +1,14 @@
+service: landworth-tesseract-layer
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+  stage: dev
+
+layers:
+  tesseractAl2:
+    path: ready-to-use/amazonlinux-2
+    compatibleRuntimes:
+      - nodejs12.x        
+
